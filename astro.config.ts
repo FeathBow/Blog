@@ -26,6 +26,8 @@ import rehypeKatex from "rehype-katex"; // Render LaTeX with KaTeX
 
 import decapCmsOauth from "astro-decap-cms-oauth";
 
+import image from "@astrojs/image";
+
 // https://astro.build/config
 export default defineConfig({
   output: 'server',
@@ -38,7 +40,7 @@ export default defineConfig({
 }), tailwind({
         applyBaseStyles: false,
         nesting: true,
-		}), sitemap(), mdx(), robotsTxt(), webmanifest({
+        }), sitemap(), mdx(), robotsTxt(), webmanifest({
         // See: https://github.com/alextim/astro-lib/blob/main/packages/astro-webmanifest/README.md
         /**
          * required
@@ -47,7 +49,7 @@ export default defineConfig({
         /**
          * optional
          **/
-        short_name: "仙人掌主题",
+        short_name: "cactus",
         description: siteConfig.description,
         lang: siteConfig.lang,
         icon: "public/icon.svg", // the source for generating favicon & icons
@@ -77,7 +79,7 @@ export default defineConfig({
             insertThemeColorMeta: false,
             insertManifestLink: false,
         },
-		}), decapCmsOauth()],
+        }), decapCmsOauth(), image()],
     markdown: {
         rehypePlugins: [
             [
@@ -88,20 +90,20 @@ export default defineConfig({
                 },
             ],
             rehypeUnwrapImages,
-            rehypeKatex, // 添加 KaTeX 用于 LaTeX 渲染
+            rehypeKatex, 
         ],
         remarkPlugins: [
           remarkReadingTime,
           remarkDirective,
           remarkAdmonitions,
-          remarkMath, // 添加 LaTeX 功能
-          remarkGemoji, // 添加 emoji 功能
+          remarkMath,
+          remarkGemoji,
         ],
         remarkRehype: {
             footnoteLabelProperties: {
                 className: [""],
             },
-      footnoteLabel: '脚注：',
+      footnoteLabel: 'footnode：',
         },
     },
     // https://docs.astro.build/en/guides/prefetch/
@@ -109,8 +111,7 @@ export default defineConfig({
     defaultStrategy: 'viewport',
     prefetchAll: true,
   },
-    // ! 改为你的网站地址，不然社交图片无法加载
-    site: "https://demo.343700.xyz/",
+    site: "https://www.lemon-cactus.date/",
     vite: {
         optimizeDeps: {
             exclude: ["@resvg/resvg-js"],
