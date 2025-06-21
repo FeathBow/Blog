@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@astrojs/image':
+        specifier: ^0.18.0
+        version: 0.18.0(astro@5.0.3(@types/node@22.10.1)(jiti@2.4.2)(rollup@4.28.0)(typescript@5.7.2)(yaml@2.6.1))(sharp@0.33.5)
       '@astrojs/mdx':
         specifier: 4.0.1
         version: 4.0.1(astro@5.0.3(@types/node@22.10.1)(jiti@2.4.2)(rollup@4.28.0)(typescript@5.7.2)(yaml@2.6.1))
@@ -154,6 +157,9 @@ packages:
     resolution: {integrity: sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==}
     engines: {node: '>=10'}
 
+  '@altano/tiny-async-pool@1.0.3':
+    resolution: {integrity: sha512-B4lSen5B2M/aGtgQ12aJ9Ms4eZXCRtJMhM7p5KpAImPAeIaOojTWEKozIB/1xWwCLRZsy0SHW+OlOZQFOBOwJQ==}
+
   '@antfu/install-pkg@0.4.1':
     resolution: {integrity: sha512-T7yB5QNG29afhWVkVq7XeIMBa5U/vs9mX69YqayXypPRmYzUmzwnYltplHmPtZ4HPCn+sQKeXW8I47wCbuBOjw==}
 
@@ -171,6 +177,16 @@ packages:
 
   '@astrojs/compiler@2.9.2':
     resolution: {integrity: sha512-Vpu0Ffsj8SoV+N0DFHlxxOMKHwSC9059Xy/OlG1t6uFYSoJXxkBC2WyF6igO7x10V+8uJrhOxaXr3nA90kJXow==}
+
+  '@astrojs/image@0.18.0':
+    resolution: {integrity: sha512-IAsECAGG5s0u7KItQMVVfhU8gAkIeIlzoSga6LymLvWvTWJacjxtnRYjct5uR03kuxIYAdjZhwQowKR1bYpwDA==}
+    deprecated: '@astrojs/image is deprecated in favor of astro:assets. Please see the migration guide for more information: https://docs.astro.build/en/guides/upgrade-to/v3/\#removed-astrojsimage'
+    peerDependencies:
+      astro: ^2.10.15
+      sharp: '>=0.31.0'
+    peerDependenciesMeta:
+      sharp:
+        optional: true
 
   '@astrojs/internal-helpers@0.4.2':
     resolution: {integrity: sha512-EdDWkC3JJVcpGpqJAU/5hSk2LKXyG3mNGkzGoAuyK+xoPHbaVdSuIWoN1QTnmK3N/gGfaaAfM8gO2KDCAW7S3w==}
@@ -2103,6 +2119,11 @@ packages:
   ieee754@1.2.1:
     resolution: {integrity: sha512-dcyqhDvX1C46lXZcVqCpK+FtMRQVdIMN6/Df5js2zouUsqG7I6sFxitIC+7KYK29KdXOLHdu9zL4sFnoVQnqaA==}
 
+  image-size@1.2.1:
+    resolution: {integrity: sha512-rH+46sQJ2dlwfjfhCyNx5thzrv+dtmBIhPHk0zgRUukHzZ/kRueTJXoYYsclBaKcSMBWuGbOFXtioLpzTb5euw==}
+    engines: {node: '>=16.x'}
+    hasBin: true
+
   import-fresh@3.3.1:
     resolution: {integrity: sha512-TR3KfrTZTYLPB6jUjfx6MF9WcWrHL9su5TObK4ZkYgBdWKPOFoSoQIdEuTuR82pmtxH2spWG9h6etwfr1pLBqQ==}
     engines: {node: '>=6'}
@@ -2596,6 +2617,11 @@ packages:
   mime-types@2.1.35:
     resolution: {integrity: sha512-ZDY+bPm5zTTF+YpCrAU9nK0UgICYPT0QtT1NZWFv4s++TNkcgVaT0g6+4R2uI4MjQjzysHB1zxuWL50hzaeXiw==}
     engines: {node: '>= 0.6'}
+
+  mime@3.0.0:
+    resolution: {integrity: sha512-jSCU7/VB1loIWBZe14aEYHU/+1UMEHoaO7qxCOVJOw9GgH72VAWppxNcjU+x9a2k3GSIBXNKxXQFqRvvZ7vr3A==}
+    engines: {node: '>=10.0.0'}
+    hasBin: true
 
   mimic-response@3.1.0:
     resolution: {integrity: sha512-z0yWI+4FDrrweS8Zmt4Ej5HdJmky15+L2e6Wgn3+iK5fWzb6T3fhNFq2+MeTRb064c6Wr4N/wv0DzQTjNzHNGQ==}
@@ -3178,6 +3204,9 @@ packages:
 
   queue-tick@1.0.1:
     resolution: {integrity: sha512-kJt5qhMxoszgU/62PLP1CJytzd2NKetjSRnyuj31fDd3Rlcz3fzlFdFLD1SItunPwyqEOkca6GbV612BWfaBag==}
+
+  queue@6.0.2:
+    resolution: {integrity: sha512-iHZWu+q3IdFZFX36ro/lKBkSvfkztY5Y7HMiPlOUjhupPcG2JMfst2KKEpu5XndviX/3UhFbRngUPNKtgvtZiA==}
 
   rc@1.2.8:
     resolution: {integrity: sha512-y3bGgqKj3QBdxLbLkomlohkvsA8gdAiUQlSBJnBhfn+BPxg4bc62d8TcBW15wavDfgexCgccckhcZvywyQYPOw==}
@@ -3965,6 +3994,8 @@ snapshots:
 
   '@alloc/quick-lru@5.2.0': {}
 
+  '@altano/tiny-async-pool@1.0.3': {}
+
   '@antfu/install-pkg@0.4.1':
     dependencies:
       package-manager-detector: 0.2.7
@@ -3986,6 +4017,18 @@ snapshots:
   '@astrojs/compiler@2.10.3': {}
 
   '@astrojs/compiler@2.9.2': {}
+
+  '@astrojs/image@0.18.0(astro@5.0.3(@types/node@22.10.1)(jiti@2.4.2)(rollup@4.28.0)(typescript@5.7.2)(yaml@2.6.1))(sharp@0.33.5)':
+    dependencies:
+      '@altano/tiny-async-pool': 1.0.3
+      astro: 5.0.3(@types/node@22.10.1)(jiti@2.4.2)(rollup@4.28.0)(typescript@5.7.2)(yaml@2.6.1)
+      http-cache-semantics: 4.1.1
+      image-size: 1.2.1
+      kleur: 4.1.5
+      magic-string: 0.30.14
+      mime: 3.0.0
+    optionalDependencies:
+      sharp: 0.33.5
 
   '@astrojs/internal-helpers@0.4.2': {}
 
@@ -6126,6 +6169,10 @@ snapshots:
 
   ieee754@1.2.1: {}
 
+  image-size@1.2.1:
+    dependencies:
+      queue: 6.0.2
+
   import-fresh@3.3.1:
     dependencies:
       parent-module: 1.0.1
@@ -6953,6 +7000,8 @@ snapshots:
     dependencies:
       mime-db: 1.52.0
 
+  mime@3.0.0: {}
+
   mimic-response@3.1.0: {}
 
   minimatch@3.1.2:
@@ -7450,6 +7499,10 @@ snapshots:
   queue-microtask@1.2.3: {}
 
   queue-tick@1.0.1: {}
+
+  queue@6.0.2:
+    dependencies:
+      inherits: 2.0.4
 
   rc@1.2.8:
     dependencies:

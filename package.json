@@ -16,6 +16,7 @@
 		"prepare": "husky"
 	},
 	"dependencies": {
+		"@astrojs/image": "^0.18.0",
 		"@astrojs/mdx": "4.0.1",
 		"@astrojs/rss": "4.0.10",
 		"@astrojs/sitemap": "3.2.1",
