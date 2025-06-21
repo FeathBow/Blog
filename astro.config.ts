@@ -103,7 +103,7 @@ export default defineConfig({
             footnoteLabelProperties: {
                 className: [""],
             },
-      footnoteLabel: 'footnode：',
+      footnoteLabel: 'Footnote:',
         },
     },
     // https://docs.astro.build/en/guides/prefetch/
