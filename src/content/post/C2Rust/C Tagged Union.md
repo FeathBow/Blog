@@ -1,7 +1,9 @@
 ---
 title: C Tagged Union
-description: 
-tags: []
+description: C Tagged Union
+tags:
+  - C
+  - Rust
 publishDate: 2025-07-12 03:00
 draft: false
 share: true
@@ -268,7 +270,7 @@ typedef union epoll_data {
 
 struct epoll_event {
     uint32_t events;
-    epoll_data_t data;
+    epoll_data_t data∏
 };
 ```
 
