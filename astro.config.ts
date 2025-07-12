@@ -25,18 +25,12 @@ import rehypeKatex from "rehype-katex"; // Render LaTeX with KaTeX
 
 
 import decapCmsOauth from "astro-decap-cms-oauth";
-
-import image from "@astrojs/image";
-
 // https://astro.build/config
 export default defineConfig({
   output: 'server',
   adapter: vercel(),
-    image: {
-        domains: ["webmention.io"],
-    },
     integrations: [expressiveCode(expressiveCodeOptions), icon({
-  iconDir: "public/icons", // 修改：指定自定义图标目录 name = svg文件名
+  iconDir: "public/icons", 
 }), tailwind({
         applyBaseStyles: false,
         nesting: true,
@@ -79,7 +73,7 @@ export default defineConfig({
             insertThemeColorMeta: false,
             insertManifestLink: false,
         },
-        }), decapCmsOauth(), image()],
+        }), decapCmsOauth()],
     markdown: {
         rehypePlugins: [
             [
