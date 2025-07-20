@@ -40,38 +40,38 @@ const {
 		<div id="aplayer"></div>
 		<script>
 			// 动态导入 APlayer
-			import((`aplayer/dist/APlayer.min.js`))
+			import(`aplayer/dist/APlayer.min.js`)
 				.then((APlayer) => {
-					import('aplayer/dist/APlayer.min.css');
+					import("aplayer/dist/APlayer.min.css");
 
 					new APlayer.default({
-						container: document.getElementById('aplayer'),
+						container: document.getElementById("aplayer"),
 						fixed: true,
-						audio: [{
-							name: 'ツキカゲ',
-							artist: 'esoragoto',
-							url: '/music/001.sF4yuzEnJeM.m4a',
-							cover: 'https://i.scdn.co/image/ab67616d00001e020f6fa22cd67985ed99dd9633',
-						}]
+						audio: [
+							{
+								name: "ツキカゲ",
+								artist: "esoragoto",
+								url: "/music/001.sF4yuzEnJeM.m4a",
+								cover: "https://i.scdn.co/image/ab67616d00001e020f6fa22cd67985ed99dd9633",
+							},
+						],
 					});
 				})
 				.catch((error) => {
-					console.error('Failed to load APlayer module:', error);
+					console.error("Failed to load APlayer module:", error);
 				});
 		</script>
 
 		<!--ChunCai 项目地址:https://github.com/shalldie/chuncai-->
-    <script>
-      import chuncai from 'chuncai';
-      // 读取配置文件
-      let chuncai_config = '/data/chuncai.json';
-      fetch(chuncai_config)
-        .then(Response => Response.json())
-        .then(opt => {
-          chuncai.init(opt);
-        })
-
-    </script>
-
+		<script>
+			import chuncai from "chuncai";
+			// 读取配置文件
+			let chuncai_config = "/data/chuncai.json";
+			fetch(chuncai_config)
+				.then((Response) => Response.json())
+				.then((opt) => {
+					chuncai.init(opt);
+				});
+		</script>
 	</body>
 </html>
