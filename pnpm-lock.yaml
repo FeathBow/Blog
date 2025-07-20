@@ -47,6 +47,9 @@ importers:
       astro-webmanifest:
         specifier: ^1.0.0
         version: 1.0.0
+      chuncai:
+        specifier: ^1.0.7
+        version: 1.0.7
       cssnano:
         specifier: ^7.0.6
         version: 7.1.0(postcss@8.5.6)
@@ -1372,6 +1375,9 @@ packages:
   chownr@3.0.0:
     resolution: {integrity: sha512-+IxzY9BZOQd/XuYPRmrvEVjF/nqj5kgT4kEq7VofrDoM1MxoRjEWkrCC3EtLi59TVawxTAn+orJwFQcrqEN1+g==}
     engines: {node: '>=18'}
+
+  chuncai@1.0.7:
+    resolution: {integrity: sha512-n+h5TxRd+59m8rf2l2peQ6X+Vgt3VYD96k3XglIPBHAANBe/AqeTa6Nr8VdY4ta9xmqG0lCKD1jugjXQnYUGIw==}
 
   ci-info@4.3.0:
     resolution: {integrity: sha512-l+2bNRMiQgcfILUi33labAZYIWlH1kWDp+ecNo5iisRKrbm0xcRyCww71/YU0Fkw0mAFpz9bJayXPjey6vkmaQ==}
@@ -5200,6 +5206,8 @@ snapshots:
   chownr@2.0.0: {}
 
   chownr@3.0.0: {}
+
+  chuncai@1.0.7: {}
 
   ci-info@4.3.0: {}
 

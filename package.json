@@ -28,6 +28,7 @@
 		"astro-icon": "^1.1.4",
 		"astro-robots-txt": "^1.0.0",
 		"astro-webmanifest": "^1.0.0",
+		"chuncai": "^1.0.7",
 		"cssnano": "^7.0.6",
 		"hastscript": "^9.0.0",
 		"mdast-util-directive": "^3.0.0",
