@@ -50,22 +50,23 @@ const latestNotes = allNotes.sort(collectionDateSort).slice(0, MAX_NOTES);
 		</h2>
 	</section>
 
-  <script src="https://giscus.app/client.js"
-          data-repo="FeathBow/Blog"
-          data-repo-id="R_kgDOOz-zFA"
-          data-category="Index"
-          data-category-id="DIC_kwDOOz-zFM4CrHQg"
-          data-mapping="pathname"
-          data-strict="0"
-          data-reactions-enabled="1"
-          data-emit-metadata="0"
-          data-input-position="top"
-          data-theme="preferred_color_scheme"
-          data-lang="zh-CN"
-          crossorigin="anonymous"
-          async>
-  </script>
-
+	<script
+		src="https://giscus.app/client.js"
+		is:inline
+		data-repo="FeathBow/Blog"
+		data-repo-id="R_kgDOOz-zFA"
+		data-category="Index"
+		data-category-id="DIC_kwDOOz-zFM4CrHQg"
+		data-mapping="pathname"
+		data-strict="0"
+		data-reactions-enabled="1"
+		data-emit-metadata="0"
+		data-input-position="top"
+		data-theme="preferred_color_scheme"
+		data-lang="zh-CN"
+		crossorigin="anonymous"
+		async
+	></script>
 
 	{
 		latestNotes.length > 0 && (
@@ -83,6 +84,4 @@ const latestNotes = allNotes.sort(collectionDateSort).slice(0, MAX_NOTES);
 			</section>
 		)
 	}
-
-
 </PageLayout>
